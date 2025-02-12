@@ -7,6 +7,32 @@
     <link rel="stylesheet" href="../css/output.css">
 </head>
 <body  class="bg-gray-100">
+
+    <!--header section-->
+    <nav class="px-6 py-6 flex justify-between items-center bg-white shadow-md">
+        <div>
+            <a href="index.html" class="font-medium text-5xl text-yellow-500">Classic</a>
+        </div>
+        <div>
+            <ul class="flex space-x-8">
+                <li class="p-3 rounded-md hover:text-white hover:bg-yellow-400 duration-75"><a href="">HOME</a></li>
+                <li class="p-3 rounded-md hover:text-white hover:bg-yellow-400 duration-75"><a href="">ABOUT</a></li>
+                <li class="p-3 rounded-md hover:text-white hover:bg-yellow-400 duration-75"><a href="">BLOG</a></li>
+                <li class="p-3 rounded-md hover:text-white hover:bg-yellow-400 duration-75"><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Hero section-->
+
+   <section  class="bg-gray-200">
+
+    <div class="w-full">
+        <img src="https://templatemo.com/templates/templatemo_488_classic/img/tm-home-img.jpg" alt="Scenic View" class="w-full h-auto object-cover">
+    </div>
+
+   </section>
+     
     <!-- Introduction Section -->
     <main class="container mx-auto py-12 text-center">
         <h2 class="text-3xl font-bold text-yellow-600">Introduction</h2>
@@ -42,30 +68,85 @@
         </div>
     </main>
 
-    <!-- Blog Section -->
-    <section class="bg-gray-100 py-12 px-4 lg:px-16">
-        <div class="container mx-auto grid md:grid-cols-3 gap-8">
+    <section class="bg-gray-100 text-gray-900">
+        <div class="max-w-6xl mx-auto px-4 py-8">
             <!-- Main Content -->
-            <div class="md:col-span-2">
-                <h2 class="text-2xl font-bold text-yellow-600">Pellentesque fermentum mauris et posuere</h2>
-                <p class="text-gray-500 mt-2">Vivamus accumsan blandit ligula. Sed lobortis efficitur sapien</p>
-                <img src="https://templatemo.com/templates/templatemo_488_classic/img/tm-img-660x330-1.jpg" alt="Blog Image" class="rounded-lg mt-4 w-full">
-                <p class="text-gray-600 mt-4">Donec tempor lobortis tortor, in feugiat massa facilisis sed...</p>
-                <button class="mt-4 bg-yellow-600 text-white px-4 py-2 rounded-lg">READ MORE</button>
-            </div>
-            
-            <!-- Sidebar -->
-            <div>
-                <h3 class="text-lg font-semibold text-yellow-600">Categories</h3>
-                <ul class="mt-2 text-blue-600 space-y-1">
-                    <li><a href="#" class="hover:underline">Tincidunt non faucibus placerat</a></li>
-                    <li><a href="#" class="hover:underline">Vestibulum tempor ac lectus</a></li>
-                    <li><a href="#" class="hover:underline">Fusce non turpis euismod</a></li>
-                    <li><a href="#" class="hover:underline">Nam in augue consectetur</a></li>
-                </ul>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Article Section -->
+                <div class="md:col-span-2">
+                    <h1 class="text-3xl font-bold text-yellow-700">Pellentesque fermentum mauris et posuere</h1>
+                    <p class="text-gray-600 mt-2">Vivamus accumsan blandit ligula. Sed lobortis efficitur sapien</p>
+    
+                    <div class="mt-4">
+                        <img src="https://templatemo.com/templates/templatemo_488_classic/img/tm-img-660x330-1.jpg" alt="Tea and Book" class="w-full rounded-lg shadow-lg">
+                    </div>
+    
+                    <p class="mt-4 text-gray-700 leading-relaxed">
+                        Donec tempor lobortis tortor, in feugiat massa facilisis sed. Ut dignissim viverra pretium. 
+                        In eu justo maximus turpis feugiat finibus scelerisque nec eros. Cras nec lectus tempor nibh 
+                        vestibulum eleifend et ac elit.
+                    </p>
+    
+                    <p class="mt-4 text-gray-700 leading-relaxed">
+                        Morbi vel pharetra massa, non iaculis tortor. Nulla porttitor tincidunt felis et feugiat. 
+                        Vivamus fermentum ligula justo, sit amet blandit nisl volutpat id.
+                    </p>
+    
+                    <p class="mt-4 text-gray-700 leading-relaxed">
+                        Ut fringilla lacus ac tempor ullamcorper. Mauris iaculis placerat ex et mattis.
+                        Mauris id vulputate lectus, id fermentum sapien.
+                    </p>
+    
+                    <button class="mt-6 bg-yellow-600 text-white px-6 py-2 rounded-md hover:bg-yellow-700 transition">
+                        READ MORE
+                    </button>
+                </div>
+    
+                <!-- Sidebar -->
+                <div class="space-y-6">
+                    <!-- Categories -->
+                    <div>
+                        <h2 class="text-xl font-semibold text-yellow-700">Categories</h2>
+                        <ul class="mt-2 space-y-2">
+                            <li><a href="#" class="text-blue-600 hover:underline">Tincidunt non faucibus placerat</a></li>
+                            <li><a href="#" class="text-blue-600 hover:underline">Vestibulum tempor ac lectus</a></li>
+                            <li><a href="#" class="text-blue-600 hover:underline">Fusce non turpis euismod</a></li>
+                            <li><a href="#" class="text-blue-600 hover:underline">Nam in augue consectetur</a></li>
+                        </ul>
+                    </div>
+    
+                    <!-- Related Posts -->
+                    <div>
+                        <h2 class="text-xl font-semibold text-yellow-700">Related Posts</h2>
+                        <div class="mt-4 space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <img src="https://templatemo.com/templates/templatemo_488_classic/img/tm-img-240x120-1.jpg" alt="Post 1"  class="w-24 h-30 rounded-md">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-yellow-700">Lorem ipsum dolor</h3>
+                                    <p class="text-gray-600 text-sm">Aenean cursus tellus mauris, quis consequat.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <img src="https://templatemo.com/templates/templatemo_488_classic/img/tm-img-240x120-2.jpg" alt="Post 2" class="w-24 h-16 rounded-md">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-yellow-700">Lorem ipsum dolor</h3>
+                                    <p class="text-gray-600 text-sm">Aenean cursus tellus mauris, quis consequat.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <img src="https://templatemo.com/templates/templatemo_488_classic/img/tm-img-240x120-3.jpg" alt="Post 3" class="w-24 h-16 rounded-md">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-yellow-700">Lorem ipsum dolor</h3>
+                                    <p class="text-gray-600 text-sm">Aenean cursus tellus mauris, quis consequat.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End Sidebar -->
             </div>
         </div>
     </section>
+    
 
     <!-- Footer Section -->
     <footer  class="bg-gray-900 text-gray-300">
